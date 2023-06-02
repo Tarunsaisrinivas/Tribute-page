@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+
+body {
+
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.black-bg {
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.black-bg h2,
+h3 {
+
+    margin-top: 10px;
+    font-size: 19px;
+}
+
+.white-bg {
+    background-color: white;
+    color: black;
+    height: 200px;
+    width: 100%;
+
+}
+
+.white-bg p {
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 300px;
+    font-family: cursive;
+}
+
+.bio {
+    text-align: left;
+    align-items: center;
+    padding: 10px 400px 10px 400px;
+
+}
+
+.bio p {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: monospace;
+    color: white;
+    text-align: left;
+    margin-left: 150px;
+    margin-right: 50px;
+}
+
+p:hover::selection {
+    background-color: tomato;
+    color: white;
+}
+
+p span:hover {
+    background: whitesmoke;
+    color: black;
+    cursor: -webkit-grabbing;
+}
+
+h5 span:hover {
+    background: whitesmoke;
+    color: black;
+}
+
+.bio h1 {
+    margin-left: 150px;
+    margin-top: 5px;
+    color: white;
+    text-align: left;
+    font-size: 20px;
+
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 767px) {
+    .bio {
+        padding: 10px;
+    }
+
+    .bio p,
+    .bio h1 {
+        margin-left: 0;
+    }
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .bio {
+        padding: 10px 200px;
+    }
+}
+
+/* Laptop Devices */
+@media only screen and (min-width: 1024px) and (max-width: 1365px) {
+    .bio {
+        padding: 10px 300px;
+    }
+}
+
+/* Desktop Devices */
+@media only screen and (min-width: 1366px) {
+    .bio {
+        padding: 10px 400px;
+    }
+}
